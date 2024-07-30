@@ -1,0 +1,130 @@
+/* General reset for margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5; /* Light grey background */
+    color: #333; /* Dark text color */
+}
+
+/* Main container styling */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Card styling */
+.card {
+    background-color: #ffffff; /* White background for the card */
+    padding: 30px;
+    border-radius: 12px; /* More pronounced rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+    width: 100%;
+    max-width: 450px; /* Slightly wider card */
+    border: 1px solid #e1e1e1; /* Light border for card */
+    text-align: center; /* Center align text inside the card */
+}
+
+/* Card title styling */
+.card-title h3 {
+    margin-bottom: 25px;
+    font-size: 26px;
+    color: #007bff; /* Primary color for title */
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Input field styling */
+.form-control {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    font-size: 16px;
+    color: #495057;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+}
+
+.form-control:focus {
+    border-color: #007bff; /* Match the primary color */
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+}
+
+/* Show password link */
+.show-password {
+    display: block;
+    text-align: right;
+    color: #0e335a; /* Primary color for link */
+    cursor: pointer;
+    font-size: 9px;
+    margin-top: 5px;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+    font-weight: 900;
+}
+
+.show-password:hover {
+    color: #0056b3; /* Darker shade for hover effect */
+}
+
+/* Button styling */
+.btn-primary {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff; /* Primary color */
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .form-control {
+        font-size: 15px;
+    }
+
+    .btn-primary {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .form-control {
+        font-size: 14px;
+    }
+
+    .btn-primary {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
